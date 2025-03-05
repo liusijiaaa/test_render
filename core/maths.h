@@ -217,7 +217,7 @@ float vec2_edge(vec2_t start, vec2_t end, vec2_t v);
 void vec2_print(const char *name, vec2_t v);
 
 /* vec3 related functions */
-// 创建一个新的三维向量
+/* 创建一个新的三维向量 */
 vec3_t vec3_new(float x, float y, float z);
 
 // 从一个四维向量中转换出三维向量

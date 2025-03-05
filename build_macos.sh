@@ -1,8 +1,8 @@
 #!/bin/bash
 
 
-OPTS="-std=c89 -Wall -Wextra -pedantic -O3 -flto -ffast-math"
-SRCS="main.c platforms/macos.m"
+OPTS="-o viewer.out -std=c89 -Wall"
+SRCS="main.c platforms/macos.m core/*.c"
 LIBS="-framework Cocoa"
 
-clang -o Viewer $OPTS $SRCS $LIBS
+clang $OPTS $SRCS $LIBS
